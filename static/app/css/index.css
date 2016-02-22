@@ -1,0 +1,50 @@
+#wrap{
+	width: 320px;
+	margin: 0 auto;
+
+	color: #999;
+}
+.logo{
+  margin: 100px auto 40px;
+  width: 102px;
+  height: 116px;
+  background: url(../img/icons.png) no-repeat -6px -2px;
+  background-size: 230px 350px;
+
+}
+#wrap p{
+	text-align: center;
+}
+a{
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #f49068;
+}
+a:before{
+	display: inline-block;
+	content:"";
+	width: 40px;
+	height: 100%;
+	margin: 0 20px;
+    background: url(../img/icons.png) no-repeat;
+    background-size: 230px 350px;
+	vertical-align: middle;
+}
+.codeBnt{
+    margin-top: 60px;
+}
+.wifiBnt{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.codeBnt:before{
+	background-position: -186px -210px;
+}
+.wifiBnt:before{
+	background-position: -186px -280px;
+}

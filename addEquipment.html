@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>添加设备</title>
+	<link rel="stylesheet" type="text/css" href="static/app/css/base.css">
+	<link rel="stylesheet" type="text/css" href="static/app/css/addEquipment.css">
+</head>
+<body>
+	<div id="wrap">
+		<!-- 返回 -->
+		<div class="back"> 
+			<span class="backBnt">
+				<svg width="16px" height="16px" class="backSvg">
+					<polyline points="16,2 10,6 16,12" style="fill:white;stroke:#444;stroke-width:1.5"></polyline>
+				</svg>
+				<span>
+						返回
+				</span>
+			</span>				
+		</div>
+		<!-- 二维码扫描失败 -->
+		<div class="codeFail">
+			
+			<!-- applogo -->
+			<div class="logo"></div>
+			<!-- 文件说明 -->
+			<p>获取设备信息失败，你可以再扫一次<br> 或者通过WiFi添加设备。
+			</p>
+			<!-- 二维码通道按钮 -->
+			<a href="javascript:void(0);" class="codeBnt">扫二维码添加设备</a>
+			<!-- WiFi通道按钮 -->
+			<a href="javascript:void(0);" class="wifiBnt">通过WiFi添加设备</a>
+		</div>
+		
+		<!-- wifi搜索中 -->
+		<div id="wifi_ing">
+			<div class="wifiBox">
+				<!-- wifi——logo -->	
+				<div class="wifi_bg"></div>
+				<!-- 文字说明_wifi -->
+				<p>正在搜寻同一WiFi网络下的设备</p>
+			</div>
+			
+		</div>
+
+		<!-- 搜素到的设备 -->
+		<div id=""></div>
+	</div>
+	<script type="text/javascript">
+	// WiFi搜索中为视口的高度
+	(function(){
+		var wifi_ing = document.getElementById("wifi_ing");
+		var allHeight = document.documentElement.clientHeight;
+		wifi_ing.style.height = ""+allHeight+"px";
+	}())
+	
+	</script>
+</body>
+</html>

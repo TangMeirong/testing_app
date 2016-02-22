@@ -1,15 +1,32 @@
 #wrap{
 	width: 320px;
 	margin: 0 auto;
-
 	color: #999;
+}
+/*二维码扫描失败*/
+.codeFail,#wifi_ing{
+  width: 100%;
+}
+#wifi_ing{
+  display: none;
+}
+/*返回*/
+.back{
+  background-color: #f4f4f4;
+}
+.backBnt{
+  display: inline-block;
+  padding: 5px;
+}
+.backSvg{
+  vertical-align: middle;
 }
 /*applogo*/
 .logo{
-  margin: 100px auto 40px;
+  margin: 50px auto 40px;
   width: 102px;
   height: 116px;
-  background: url(../img/icons.png) no-repeat -6px -2px;
+  background: url(../img/icons.png) no-repeat -122px -2px;
   background-size: 230px 350px;
 
 }
@@ -53,3 +70,29 @@ a:before{
 .wifiBnt:before{
 	background-position: -186px -280px;
 }
+/*wifi搜索中*/
+#wifi_ing{
+  text-align: center;
+}
+#wifi_ing:before{
+  content:"";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+.wifiBox{
+  width: 90%;
+  display: inline-block;
+  vertical-align: middle; 
+}
+.wifi_bg{
+  margin: 0 auto 20px;
+  width: 106px;
+  height: 90px;
+  background: url(../img/icons.png) no-repeat;
+  background-size: 230px 350px;
+  background-position: 0px -118px;
+}
+/*文字说明_wifi*/
+

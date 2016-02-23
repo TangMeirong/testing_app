@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>参数设置</title>
+	<link rel="stylesheet" type="text/css" href="static/app/css/base.css">
+	<link rel="stylesheet" type="text/css" href="static/app/css/setParameter.css">
+</head>
+<body>
+	<div id="wrap">
+		<!-- 返回 -->
+		<div class="back" style="height:28px;"> 
+			<span class="backBnt">
+				<svg width="16px" height="16px" class="backSvg">
+					<polyline points="16,2 10,6 16,12" style="fill:white;stroke:#444;stroke-width:1.5"></polyline>
+				</svg>
+				<span>
+						返回
+				</span>
+			</span>				
+		</div>
+		<!-- 参数设置 -->
+		<ul id="setParameter">
+		    <!-- 温度 -->
+			<li>
+				<span>温度</span>
+				<!-- 输入框box -->
+				<div class="box">
+					<!-- 减少按钮 -->
+					<span class="reduce">-</span>
+					<input type="text" id="hour">					
+					<!-- 增加按钮 -->
+					<span class="add">+</span>					
+				</div>
+			</li>
+		</div>
+		
+		<!-- 保存按钮 -->
+		<a href="javascript:void(0);" class="saveBnt">保存</a>
+	</div>
+</body>
+</html>

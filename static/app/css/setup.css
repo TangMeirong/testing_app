@@ -1,0 +1,38 @@
+#wrap{
+	width: 320px;
+	margin: 0 auto;
+	color: #999;
+}
+
+/*设置列表*/
+.setList{
+   padding: 0 20px; 
+}
+.setList li{
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f2f2;
+}
+/*设置名称文本*/
+.text{
+  width: 220px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.text p{
+  font-size: 14px;
+  color: #262626;
+}
+/*按钮*/
+.on_off{
+  width: 52px;
+  height: 31px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/icons.png) no-repeat;
+  background-size: 230px 350px;
+  background-position: -14px -212px;
+}
+/*开启设置*/
+.active_on{
+   background-position:-14px -255px; 
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>设置</title>
+	<link rel="stylesheet" type="text/css" href="static/app/css/base.css">
+	<link rel="stylesheet" type="text/css" href="static/app/css/setup.css">
+</head>
+<body>
+	<!-- 设置列表 -->
+	<ul id="wrap" class="setList">
+		<li>
+			<div class="text">
+				<p>产品介绍</p>
+				<span>详细了解兆晶新风机的功能与操作</span>
+			</div>
+		</li>
+		<li>
+			<div class="text">
+				<p>定时开关机</p>
+				<span>根据您的在家时间设定新风机的开启和关闭时间</span>
+			</div>
+		</li>
+		<li>
+			<div class="text">
+				<p>异常提醒</p>
+				<span>当滤网剩余使用寿命达到警戒线的时候提醒您更换滤网</span>
+			</div>
+			<a href="javascript:void(0);" class="on_off"></a>
+		</li>
+		<li>
+			<div class="text">
+				<p>参数设置</p>
+				<span>可以设定您感觉最舒适的温度、湿度、CO2含量。</span>
+			</div>
+		</li>
+		<li>
+			<div class="text">
+				<p>售后服务设定</p>
+				<span>设定您的家庭地址准确位置和联系电话</span>
+			</div>
+		</li>
+		<li>
+			<div class="text">
+				<p>滤网更换提醒</p>
+				<span>当滤网剩余使用寿命达到警戒线的时候提醒您更换滤网</span>
+			</div>
+			<a href="javascript:void(0);" class="on_off active_on"></a>
+		</li>
+	</ul>
+	<script type="text/javascript">
+	(function(){
+		var on_off = document.getElementsByClassName("on_off")[0];
+		var temp = true;
+		on_off.onclick = function(){
+			if(temp){
+				temp = false;
+				on_off.className = "on_off active_on";
+			}else{
+				temp = true;
+				on_off.className = "on_off";
+			}
+		}
+	}())
+	</script>
+</body>
+</html>

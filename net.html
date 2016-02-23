@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>滤网</title>
+	<link rel="stylesheet" type="text/css" href="static/app/css/base.css">
+	<link rel="stylesheet" type="text/css" href="static/app/css/net.css">
+</head>
+<body>
+	<div id="wrap">
+		<div id="netImg">
+			<!-- 滤网 -->
+			<img src="static/app/img/net.jpg" class="net">
+		</div>
+		
+		<div id="fixed_foort" style="height: 212px;">
+			<!-- 文件说明 -->
+			<p>滤网已为你工作34天了<br>建议20天后让它告老还乡吧。</p>
+			<!-- 一键更换滤网按钮 -->
+			<a href="javascript:void(0);" class="changeNetBnt">一键更换滤网</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	(function(){
+		var allHeight = document.documentElement.clientHeight;
+		var fixed_foort = document.getElementById("fixed_foort");
+		var foort_height = fixed_foort.style.height;
+		var fixed_ft = Number(foort_height.slice(0,foort_height.length-2));
+		var netImg = document.getElementById("netImg");
+		netImg.style.height = ""+(allHeight - fixed_ft)+"px";
+	}())
+	</script>
+</body>
+</html>

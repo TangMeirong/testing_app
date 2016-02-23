@@ -5,22 +5,55 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>设备</title>
 	<link rel="stylesheet" type="text/css" href="static/app/css/base.css">
-	<link rel="stylesheet" type="text/css" href="static/app/css/addEquipment.css">
+	<link rel="stylesheet" type="text/css" href="static/app/css/equipment.css">
 </head>
 <body>
 	<div id="wrap">
 		<!-- 设备 -->
-		<div class="codeFail">
+		<ul id="equipList">
+			<li class="clearfix">
+				<img src="static/app/img/equip.png">
+				<div class="area">
+					<p>兆晶新风机（卧室)</p>
+					<span>李霞控制</span>
+				</div>
+				<span class="enterBnt">
+					<svg width="16px" height="16px" class="enterSvg">
+						<polyline points="6,2 16,8 6,16" style="fill:white;stroke:#444;stroke-width:1.5"></polyline>
+					</svg>
+				</span>	
+			</li>
+			<li class="clearfix">
+				<img src="static/app/img/equip.png">
+				<div class="area">
+					<p>兆晶新风机（卧室)</p>
+					<span>李霞控制</span>
+				</div>
+				<span class="enterBnt">
+					<svg width="16px" height="16px" class="enterSvg">
+						<polyline points="6,2 16,8 6,16" style="fill:white;stroke:#444;stroke-width:1.5"></polyline>
+					</svg>
+				</span>	
+			</li>
 			
-			
+		</ul>
+		<div id="fixed_foort" style="height: 170px;">
 			<!-- 二维码通道按钮 -->
 			<a href="javascript:void(0);" class="codeBnt">扫二维码添加设备</a>
 			<!-- WiFi通道按钮 -->
 			<a href="javascript:void(0);" class="wifiBnt">通过WiFi添加设备</a>
 		</div>
 		
-		
 	</div>
-	
+	<script type="text/javascript">
+	(function(){
+		var allHeight = document.documentElement.clientHeight;
+		var fixed_foort = document.getElementById("fixed_foort");
+		var foort_height = fixed_foort.style.height;
+		var fixed_ft = Number(foort_height.slice(0,foort_height.length-2));
+		var equipList = document.getElementById("equipList");
+		equipList.style.height = ""+(allHeight - fixed_ft)+"px";
+	}())
+	</script>
 </body>
 </html>

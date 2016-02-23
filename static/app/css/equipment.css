@@ -1,0 +1,82 @@
+#wrap{
+	width: 320px;
+	margin: 0 auto;
+	color: #999;
+}
+/*设备*/
+#equipList{
+    padding: 0 20px;
+    overflow: auto;
+}
+#equipList li{
+  padding: 10px 0px 10px 10px;
+  border-bottom: 1px solid #e3e6e6;
+}
+#equipList li img{
+   width: 70px;
+  float: left; 
+}
+#equipList li .area{
+  float: left;
+  margin-left: 20px;
+
+}
+.area p{
+  font-size: 14px;
+  color: #262626;  
+}
+/*进入设备按钮*/
+.enterBnt{
+  float: right;
+  display: inline-block;
+  padding: 5px;
+}
+.enterSvg{
+  vertical-align: middle;
+}
+#fixed_foort{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #fff;
+}
+/*按钮*/
+a{
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  color: #bbbbbb;
+  font-size: 16px;
+  font-weight: lighter;
+  background-color: #eeeeee;
+}
+.codeBnt:before,.wifiBnt:before{
+	display: inline-block;
+	content:"";
+	width: 40px;
+	height: 100%;
+	margin: 0 20px;
+  background: url(../img/icons.png) no-repeat;
+  background-size: 230px 350px;
+	vertical-align: middle;
+}
+/*二维码通道按钮*/
+.codeBnt{
+    margin-top: 10px;
+}
+.codeBnt:before{
+  background-position:-126px -210px;
+}
+/*WiFi通道按钮*/
+.wifiBnt{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.wifiBnt:before{
+	background-position:-130px -280px;
+}

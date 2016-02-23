@@ -4,10 +4,10 @@
 	color: #999;
 }
 /*二维码扫描失败*/
-.codeFail,#wifi_ing{
+.codeFail,#wifi_ing,#equipmentList{
   width: 100%;
 }
-#wifi_ing{
+#wifi_ing,.codeFail{
   display: none;
 }
 /*返回*/
@@ -43,16 +43,18 @@ a{
   display: block;
   margin: 0 auto;
   color: #fff;
+  font-size: 16px;
+  font-weight: lighter;
   background-color: #f49068;
 }
-a:before{
+.codeBnt:before,.wifiBnt:before{
 	display: inline-block;
 	content:"";
 	width: 40px;
 	height: 100%;
 	margin: 0 20px;
-    background: url(../img/icons.png) no-repeat;
-    background-size: 230px 350px;
+  background: url(../img/icons.png) no-repeat;
+  background-size: 230px 350px;
 	vertical-align: middle;
 }
 /*二维码通道按钮*/
@@ -94,5 +96,46 @@ a:before{
   background-size: 230px 350px;
   background-position: 0px -118px;
 }
-/*文字说明_wifi*/
+/*设备列表*/
+#equip_list{
+    padding: 0 20px;
+  height: 400px;
+  overflow: auto;
+}
+#equip_list li{
+    height: 46px;
+  line-height: 46px;
+  border-bottom: 1px solid #e2e4e4;
+}
 
+/*设备名称*/
+.equip_name{
+  float: left;
+}
+/*添加设备按钮 */
+.selectBnt{
+  float: right;
+  width: 30px;
+  height: 46px;
+  border-radius: 0;
+  background: url(../img/icons.png) no-repeat -122px -2px;
+  background-size: 230px 350px;
+  background-position: -145px -172px;
+}
+/*添加设备按钮 确定添加激活 */
+.activeBnt{
+  background-position: -192px -124px;
+}
+#fixed_foort{
+  padding: 10px 0 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #fff;
+}
+/*添加设备按钮*/
+.addBnt{
+  text-align: center;
+}

@@ -10,7 +10,7 @@
 <body>
 	<div id="wrap">
 		<!-- 返回 -->
-		<div class="back"> 
+		<div class="back" style="height:28px;"> 
 			<span class="backBnt">
 				<svg width="16px" height="16px" class="backSvg">
 					<polyline points="16,2 10,6 16,12" style="fill:white;stroke:#444;stroke-width:1.5"></polyline>
@@ -46,14 +46,56 @@
 		</div>
 
 		<!-- 搜素到的设备 -->
-		<div id=""></div>
+		<div id="equipmentList">
+			<!-- 设备列表 -->
+			<ul id="equip_list">
+				<li class="clearfix">
+					<!-- 设备名称 -->
+					<span class="equip_name">新风机——3253635346</span>
+					<a href="javascript:void(0);" class="selectBnt"></a>
+				</li>
+				<li class="clearfix">
+					<!-- 设备名称 -->
+					<span class="equip_name">新风机——3253635346</span>
+					<a href="javascript:void(0);" class="selectBnt"></a>
+				</li>
+			</ul>
+						
+			<div id="fixed_foort" style="height:92px;">
+				<!-- 添加设备按钮 -->
+				<a href="javascript:void(0);" class="addBnt">添加设备</a>
+			</div>
+			
+		</div>
 	</div>
 	<script type="text/javascript">
-	// WiFi搜索中为视口的高度
+	
 	(function(){
 		var wifi_ing = document.getElementById("wifi_ing");
 		var allHeight = document.documentElement.clientHeight;
+		// WiFi搜索中为视口的高度
 		wifi_ing.style.height = ""+allHeight+"px";
+		var equip_list = document.getElementById("equip_list");
+		var fixed_foort = document.getElementById("fixed_foort");
+		var foort_height = fixed_foort.style.height;
+		var fixed_ft = Number(foort_height.slice(0,foort_height.length-2));
+		var back = document.getElementsByClassName("back")[0];
+		var back_height = back.style.height;
+		var back_ht = Number(back_height.slice(0,back_height.length-2));
+		// 求出设备列表的高度
+		equip_list.style.height = ""+(allHeight - back_ht - fixed_ft)+"px";
+		var selectBnt = document.getElementsByClassName("selectBnt")[0];
+		var temp = true;
+		selectBnt.onclick = function(){
+			if(temp){
+				selectBnt.className = "selectBnt activeBnt";
+				temp = false;
+			}else{
+				temp = true;
+				selectBnt.className = "selectBnt";
+			}
+			
+		}
 	}())
 	
 	</script>

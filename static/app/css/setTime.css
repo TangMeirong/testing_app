@@ -1,0 +1,95 @@
+html,body{
+  height: 100%;
+  background-color: #f4f4f4;  
+}
+#wrap{
+	width: 320px;
+	margin: 0 auto;
+	color: #999;
+}
+/*文件说明*/
+#wrap p{
+  text-align: center;
+}
+/*按钮*/
+a{
+  display: inline-block;
+    background: url(../img/icons.png) no-repeat;
+    background-size: 230px 350px;
+    vertical-align: middle;
+}
+/*共用的 li */
+li{
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f2f2;
+}
+
+/*返回*/
+.back{
+  background-color: #f4f4f4;
+}
+.backBnt{
+  display: inline-block;
+  padding: 5px;
+}
+.backSvg{
+  vertical-align: middle;
+}
+/*设定开机时间 设定关机时间*/
+#openTime , #closeTime{
+  padding:14px 14px 0;
+  background-color: #fff;
+}
+#closeTime{
+  margin-top: 20px;
+}
+#openTime .clearfix ,#closeTime .clearfix{
+  height: 36px;
+  line-height: 36px;
+}
+.openTitle,.closeTitle{
+  float: left;
+   font-size: 16px;
+  color: #333; 
+}
+/*添加时间*/
+.addTimeBnt{
+  background-position: -190px -174px;
+  width: 36px;
+  height: 36px;
+  float: right;
+}
+/*设定的时间*/
+.time{
+  display: inline-block;
+  color: #000;
+  vertical-align: middle;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.time:before{
+  content: "";
+  display: inline-block;
+  background: url(../img/icons.png) no-repeat;
+  background-size: 230px 350px;
+  background-position: -20px -298px;
+  width: 28px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.prompt{
+   display: inline-block;
+   vertical-align: middle;
+  margin-right: 70px;
+}
+/*关闭——开启按钮*/
+.on_off{
+  background-position: -15px -211px;
+  width: 52px;
+  height: 32px;
+}
+/*开启设置*/
+.active_on{
+   background-position:-14px -255px; 
+}

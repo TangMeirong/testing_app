@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>定时开关机</title>
+	<link rel="stylesheet" type="text/css" href="static/app/css/base.css">
+	<link rel="stylesheet" type="text/css" href="static/app/css/setTime.css">
+</head>
+<body>
+	<div id="wrap">
+		<!-- 返回 -->
+		<div class="back" style="height:28px;"> 
+			<span class="backBnt">
+				<svg width="16px" height="16px" class="backSvg">
+					<polyline points="16,2 10,6 16,12" style="fill:white;stroke:#444;stroke-width:1.5"></polyline>
+				</svg>
+				<span>
+						返回
+				</span>
+			</span>				
+		</div>
+		<!-- 设定开机时间 -->
+		<div id="openTime">
+			<div class="clearfix">
+				<span class="openTitle">1、设定开机时间</span>
+				<!-- 添加时间 -->
+				<a href="javascript:void(0);" class="addTimeBnt"></a>
+			</div>
+			
+			<ul id="openTimeList">
+				<li>
+					<!-- 设定的时间 -->
+					<span class="time">17:38</span>
+					<div class="prompt">
+						<p><span class="hour">1</span>小时<span class="minute">30</span>分钟</p>
+						<span class="count">重复</span>
+					</div>
+					<!-- 关闭——开启按钮 -->
+					<a href="javascript:void(0);" class="on_off"></a>
+				</li>
+			</ul>
+		</div>
+		<!-- 设定关机时间 -->
+		<div id="closeTime">
+			<div class="clearfix">
+				<span class="closeTitle">2、设定关机时间</span>
+				<!-- 添加时间 -->
+				<a href="javascript:void(0);" class="addTimeBnt"></a>
+			</div>
+			
+			<ul id="closeTimeList">
+				<li>
+					<!-- 设定的时间 -->
+					<span class="time">17:38</span>
+					<div class="prompt">
+						<p><span class="hour">1</span>小时<span class="minute">30</span>分钟</p>
+						<span class="count">重复</span>
+					</div>
+					<!-- 关闭——开启按钮 -->
+					<a href="javascript:void(0);" class="on_off active_on"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+	(function(){
+		var on_off = document.getElementsByClassName("on_off")[0];
+		var temp = true;
+		on_off.onclick = function(){
+			if(temp){
+				temp = false;
+				on_off.className = "on_off active_on";
+			}else{
+				temp = true;
+				on_off.className = "on_off";
+			}
+		}
+	}())
+	</script>
+</body>
+</html>

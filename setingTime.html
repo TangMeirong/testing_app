@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>定时</title>
+	<link rel="stylesheet" type="text/css" href="static/app/css/base.css">
+	<link rel="stylesheet" type="text/css" href="static/app/css/setingTime.css">
+</head>
+<body>
+	<div id="wrap">
+		<!-- 返回 -->
+		<div class="back" style="height:28px;"> 
+			<span class="backBnt">
+				<svg width="16px" height="16px" class="backSvg">
+					<polyline points="16,2 10,6 16,12" style="fill:white;stroke:#444;stroke-width:1.5"></polyline>
+				</svg>
+				<span>
+						返回
+				</span>
+			</span>				
+		</div>
+		<!-- 设置时间 -->
+		<div id="setTimeBox">
+			<!-- 小时 -->
+			<div class="hourBox">
+				<!-- 增加按钮 -->
+				<span class="add">+</span>
+				<input type="number" id="hour">
+				<!-- 减少按钮 -->
+				<span class="reduce">-</span>
+			</div>
+			<span class="hourText">时</span>
+			<!-- 分钟 -->
+			<div class="minuteBox">
+				<!-- 增加按钮 -->
+				<span class="add">+</span>
+				<input type="number" id="minute">
+				<!-- 减少按钮 -->
+				<span class="reduce">-</span>
+			</div>
+			<span class="minutetext">分</span>
+		</div>
+		<!-- 设置重复 -->
+		<div id="recurBox">
+			<p>重复</p>
+			<span id="seven" class="activeDay">日</span>
+			<span id="one">一</span>
+			<span id="two">二</span>
+			<span id="three">三</span>
+			<span id="four">四</span>
+			<span id="five">五</span>
+			<span id="six">六</span>
+		</div>
+		<!-- 保存按钮 -->
+		<a href="javascript:void(0);" class="saveBnt">保存</a>
+	</div>
+</body>
+</html>

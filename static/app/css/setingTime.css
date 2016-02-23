@@ -1,0 +1,121 @@
+html,body{
+  height: 100%;
+  background-color: #f4f4f4;
+}
+#wrap{
+  height: 100%;
+	width: 320px;
+	margin: 0 auto;
+	color: #999;
+}
+
+/*按钮*/
+a{
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 16px;
+  font-weight: lighter;
+  background-color: #f49068;
+}
+/*返回*/
+.back{
+  background-color: #f4f4f4;
+}
+.backBnt{
+  display: inline-block;
+  padding: 5px;
+}
+.backSvg{
+  vertical-align: middle;
+}
+/*设置时间 设置重复*/
+#setTimeBox,#recurBox{
+  background-color: #fff; 
+  padding: 2px 20px; 
+}
+#recurBox{
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.hourBox,.minuteBox{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 27px;
+}
+/*小时*/
+/*.minuteBox{
+{
+
+}*/
+/*分钟*/
+/*.minuteBox{
+
+}*/
+.add,.reduce,input{
+  display: block;
+  text-align: center;
+}
+/*增加按钮 减少按钮*/
+.add,.reduce{
+  font-size: 30px;
+  color: #000;
+  background-color: #eee;
+
+}
+.add{
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;  
+}
+/*减少按钮 */
+.reduce{
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+/*输入框*/
+input{
+  width: 52px;
+  height: 52px;
+  outline: none;
+  border: none;
+  background-color: #9edef2;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+
+}
+.hourText,.minutetext{
+  font-size: 18px;
+  color: #000;
+}
+#recurBox p{
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#recurBox span{
+  display: inline-block;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 6px 8px;
+  margin-right: 4px;
+}
+/*激活重复日期*/
+.activeDay{
+  background-color: #9edef2;
+  color: #fff; 
+}
+/*保存按钮*/
+.saveBnt{
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

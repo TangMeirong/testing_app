@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>订单详情</title>
+	<link rel="stylesheet" type="text/css" href="static/app/css/base.css">
+	<link rel="stylesheet" type="text/css" href="static/app/css/orderDetail.css">
+</head>
+<body>
+	<div id="wrap">
+		<!-- 返回 -->
+		<div class="back" style="height:28px;"> 
+			<span class="backBnt">
+				<svg width="16px" height="16px" class="backSvg">
+					<polyline points="16,2 10,6 16,12" style="fill:white;stroke:#444;stroke-width:1.5"></polyline>
+				</svg>
+				<span>
+						返回
+				</span>
+			</span>				
+		</div>
+		<!-- 订单详情 -->
+		<ul id="detailList">
+			<!-- 滤网简介 -->
+			<li id="productText">
+				<!-- 滤网图片 -->
+				<img src="static/app/img/netImg.jpg" class="netImg">
+				<div>
+					<!-- 滤网名称 -->
+					<h2>HEPA 高密度碳滤网</h2>
+					<!-- 滤网说明 -->
+					<span>适配机型：X80、X100、X120</span>
+				</div>
+			</li>
+			<!-- 滤网单价 -->
+			<li id="priceBox" class="clearfix">
+				<span class="priceText">单价</span>
+				<span id="price">100元</span>
+			</li>
+			<!-- 滤网购买数量 -->
+			<li id="count" class="clearfix">
+				<span class="quantityBox">数量</span>
+				<span id="quantity">1</span>
+			</li>
+			<!-- 配送方式 -->
+			<li id="distribution" class="clearfix">
+				<span class="wayText">配送方式</span>
+				<span id="way">包邮</span>
+			</li>
+			<!-- 收货信息 -->
+			<li id="collect">
+				<p class="clearfix">
+					<span class="nameText">收货人：<span id="name">李大健</span></span>
+				<span id="tel">1345678901</span>
+				</p>
+				<p id="adress">广东 广州市 天河区 林和西路耀中广场B座910</p>
+			</li>
+			<!-- 下单时间 -->
+			<li id="orderTime" class="clearfix">
+				<span class="timeText">下单时间</span>
+				<span id="time">2016-05-05  12:24</span>	
+			</li>
+			<!-- 买家留言 -->
+			<li id="messageBox">
+				<span>买家留言：<span id="message"></span>无</span>
+			</li>
+			<!-- 购买滤网合计费用 -->
+			<li id="expense" class="clearfix">
+				<span class="amountBox">合计：<span id="amount">100元</span></span>
+			</li>
+		</ul>
+	</div>
+	
+</body>
+</html>

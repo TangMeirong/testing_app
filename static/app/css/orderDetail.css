@@ -1,0 +1,74 @@
+#wrap{
+	width: 320px;
+	margin: 0 auto;
+	color: #999;
+}
+/*二维码扫描失败*/
+.codeFail,#wifi_ing,#equipmentList{
+  width: 100%;
+}
+#wifi_ing,.codeFail{
+  display: none;
+}
+/*返回*/
+.back{
+  background-color: #f4f4f4;
+}
+.backBnt{
+  display: inline-block;
+  padding: 5px;
+}
+.backSvg{
+  vertical-align: middle;
+}
+/*订单详情*/
+#detailList{
+	padding:0 20px;
+}
+#detailList li{
+	padding: 14px 0;
+	border-bottom: 1px solid #ccc;
+}
+#productText div{
+  display: inline-block;
+  vertical-align:top;
+  margin-left: 10px;
+  width: 186px;
+}
+/*滤网图片*/
+.netImg{
+  width: 80px;
+  display: inline-block;
+  vertical-align:top;
+}
+/*滤网名称*/
+h2{
+  line-height: 36px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+}
+.priceText,.quantityBox,.wayText,.nameText,.timeText{
+	float: left;
+}
+#price,#quantity,#way,#tel,#time,.amountBox{
+	float: right;
+	color: #333;
+}
+/*购买滤网合计费用*/
+#detailList #expense{
+	border-bottom:none;
+}
+#name{
+	color: #333;
+}
+#adress{
+	color: #333;
+  margin-top: 8px;
+}
+.amountBox{
+	color: #999;
+}
+#amount{
+  color:#f65f15;	
+}

@@ -23,13 +23,43 @@
 		<!-- 参数设置 -->
 		<ul id="setParameter">
 		    <!-- 温度 -->
-			<li>
-				<span>温度</span>
+			<li class="clearfix">
+				<span class="parameterName">温度</span>
 				<!-- 输入框box -->
-				<div class="box">
+				<div class="box clearfix">
 					<!-- 减少按钮 -->
 					<span class="reduce">-</span>
-					<input type="text" id="hour">					
+					<input type="number" id="parameter">	
+					<!-- 单位 -->			
+					<span class="unit">℃</span>	
+					<!-- 增加按钮 -->
+					<span class="add">+</span>					
+				</div>
+			</li>
+			<!-- 湿度 -->
+			<li class="clearfix">
+				<span class="parameterName">湿度</span>
+				<!-- 输入框box -->
+				<div class="box clearfix">
+					<!-- 减少按钮 -->
+					<span class="reduce">-</span>
+					<input type="number" id="moisture">	
+					<!-- 单位 -->			
+					<span class="unit">%</span>		
+					<!-- 增加按钮 -->
+					<span class="add">+</span>					
+				</div>
+			</li>
+			<!-- co2浓度 -->
+			<li class="clearfix">
+				<span class="parameterName">CO2浓度</span>
+				<!-- 输入框box -->
+				<div class="box clearfix">
+					<!-- 减少按钮 -->
+					<span class="reduce">-</span>
+					<input type="number" id="carbon">	
+					<!-- 单位 -->
+					<span class="unit">%</span>					
 					<!-- 增加按钮 -->
 					<span class="add">+</span>					
 				</div>

@@ -8,12 +8,15 @@ html,body{
 	color: #999;
 }
 /*订单空*/
-#order_nothing{
+#order_nothing,#orderList{
   height: 100%;
   width: 100%;
   text-align: center;
+  background-color: #f4f4f4;
 }
-
+#order_nothing{
+  display: none;
+}
 #order_nothing:before{
   content:"";
   display: inline-block;
@@ -41,3 +44,67 @@ html,body{
 .nothingBox p a{
   color:#f65f15;
 }
+/*订单列表*/
+#orderList{
+  /*display: none;*/
+  padding-top: 18px;
+  text-align: left;
+}
+#orderList li{
+  background-color: #fff;
+  padding: 8px 20px;
+  margin-bottom: 18px;
+}
+#orderList li p{
+  font-size: 12px;
+  color: #666;
+  line-height: 30px;
+  /* margin-bottom: 10px; */
+  border-bottom: 1px solid #f0f2f2;
+}
+.code,.status{
+  color: #333;
+}
+/*订单号*/
+.codeBox{
+  float: left;
+}
+/*交易状态*/
+.statusBox{
+  float: right;
+}
+/*滤网图片*/
+.netImg{
+  width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#orderList li div{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 186px;
+}
+#orderList li div p{
+  border-bottom:none; 
+}
+/*滤网名称*/
+h2{
+  line-height: 36px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+}
+/*购买数量*/
+.quantityBox{
+  float: left;
+}
+/*购买合计金额*/
+.amountBox{
+  float: right;  
+}
+.amount{
+  color:#f65f15;
+}
+
+

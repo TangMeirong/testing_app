@@ -1,0 +1,123 @@
+#wrap{
+	width: 320px;
+	margin: 0 auto;
+	color: #999;
+}
+/*返回*/
+.back{
+  background-color: #f4f4f4;
+}
+.backBnt{
+  display: inline-block;
+  padding: 5px;
+}
+.backSvg{
+  vertical-align: middle;
+}
+/*订单详情*/
+#detailList{
+	padding:0 20px;
+   margin-bottom: 10px;
+}
+#detailList li{
+	padding: 14px 0;
+	border-bottom: 1px solid #ccc;
+}
+#productText div{
+  display: inline-block;
+  vertical-align:top;
+  margin-left: 10px;
+  width: 186px;
+}
+/*滤网图片*/
+.netImg{
+  width: 80px;
+  display: inline-block;
+  vertical-align:top;
+}
+/*滤网名称*/
+h2{
+  line-height: 36px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+}
+input{
+  outline: none;
+  border: none;
+/*background: #ccc;*/
+}
+.priceText,.quantityBox,.wayText,.nameText,.timeText{
+	float: left;
+}
+#price,#quantity,#way,#tel,#time,.amountBox{
+	float: right;
+	color: #333;
+}
+#quantity{
+  border: 1px solid #dcdcdc;
+}
+/*购买个数*/
+#quantity #num{
+  width: 30px;
+  text-align: center;
+  background: #fff;
+}
+/*加一个 减一个*/
+.add,.reduce{
+  background: #f5f5f5;
+  font-size: 14px;
+  width: 24px;
+  display: inline-block;
+  text-align: center;
+  color: #dcdcdc;
+}
+
+/*收货人*/
+#name,#tel{
+  width: 100px;
+  color: #333;
+}
+/*手机*/
+#tel{
+  text-align: right;
+}
+/*收货地址*/
+#adress{
+  width: 100%;
+  color: #333;
+  margin-top: 8px;
+}
+/*留言*/
+#message{
+  width: 77%;
+}
+/*购买滤网合计费用*/
+#detailList #expense{
+	border-bottom:none;
+}
+.amountBox{
+	color: #999;
+}
+#amount{
+  color:#f65f15;	
+}
+/*按钮*/
+a{
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 16px;
+  font-weight: lighter;
+  background-color: #f49068;
+
+}
+/*支付*/
+#pay{
+  text-align: center;
+  margin-bottom: 10px;  
+}

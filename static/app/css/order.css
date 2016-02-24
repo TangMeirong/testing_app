@@ -1,0 +1,43 @@
+html,body{
+  height: 100%;
+}
+#wrap{
+  height: 100%;
+	width: 320px;
+	margin: 0 auto;
+	color: #999;
+}
+/*订单空*/
+#order_nothing{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+#order_nothing:before{
+  content:"";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+.nothingBox{
+  width: 90%;
+  margin-top: -100px;
+  display: inline-block;
+  vertical-align: middle; 
+}
+/*order图标*/
+.orderIcon{
+  width: 106px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+/*文字说明_nothing*/
+.nothingBox p{
+  font-size: 14px;
+  line-height: 28px;
+}
+.nothingBox p a{
+  color:#f65f15;
+}

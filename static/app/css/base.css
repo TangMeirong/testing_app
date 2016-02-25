@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6,strong,span,i{
 .clearfix{
 	zoom:1;
 }
-.clearfix:after{
+.clearfix:before,.clearfix:after{
 	content:"";
 	display: block;
 	overflow: hidden;
